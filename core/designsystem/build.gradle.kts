@@ -1,5 +1,6 @@
 plugins {
     id("orgo.android.library")
+    id("orgo.android.library.compose")
 }
 
 android {
