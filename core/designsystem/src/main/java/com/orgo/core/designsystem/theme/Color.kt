@@ -1,4 +1,4 @@
-package com.orgo.android.ui.theme
+package com.orgo.core.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 

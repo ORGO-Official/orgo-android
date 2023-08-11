@@ -54,6 +54,9 @@ android {
 }
 
 dependencies {
+    // module
+    implementation(project(":core:designsystem"))
+
     // library
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.core.ktx)
