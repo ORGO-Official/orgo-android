@@ -1,4 +1,4 @@
-package com.orgo.core.common
+package com.orgo.feature.mountain_detail
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.orgo.core.common.test", appContext.packageName)
+        assertEquals("com.orgo.feature.search.test", appContext.packageName)
     }
 }
