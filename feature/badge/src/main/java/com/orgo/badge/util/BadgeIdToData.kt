@@ -1,0 +1,57 @@
+package com.orgo.badge.util
+
+import com.orgo.core.designsystem.icon.OrgoIcon
+
+
+// 뱃지 이미지 id와 들어갈 텍스트 반환
+internal fun badgeIdToData(badgeId: Int) : Pair<Int,String>{
+    return when(badgeId){
+        1 -> Pair(OrgoIcon.Acha_Bronze, "아차산")
+        2 -> Pair(OrgoIcon.Acha_Silver, "아차산")
+        3 -> Pair(OrgoIcon.Acha_Gold, "아차산")
+        4 -> Pair(OrgoIcon.Inwang_Bronze, "인왕산")
+        5 -> Pair(OrgoIcon.Inwang_Silver, "인왕산")
+        6 -> Pair(OrgoIcon.Inwang_Gold, "인왕산")
+        7 -> Pair(OrgoIcon.Cheonggye_Bronze, "청계산")
+        8 -> Pair(OrgoIcon.Cheonggye_Silver, "청계산")
+        9 -> Pair(OrgoIcon.Cheonggye_Gold, "청계산")
+        10 -> Pair(OrgoIcon.Bukhan_Bronze, "북한산")
+        11 -> Pair(OrgoIcon.Bukhan_Silver, "북한산")
+        12 -> Pair(OrgoIcon.Bukhan_Gold, "북한산")
+        13 -> Pair(OrgoIcon.Gwanak_Bronze, "관악산")
+        14 -> Pair(OrgoIcon.Gwanak_Silver, "관악산")
+        15 -> Pair(OrgoIcon.Gwanak_Gold, "관악산")
+        16 -> Pair(OrgoIcon.Yongma_Bronze, "용마산")
+        17 -> Pair(OrgoIcon.Yongma_Silver, "용마산")
+        18 -> Pair(OrgoIcon.Yongma_Gold, "용마산")
+        19 -> Pair(OrgoIcon.Surak_Bronze, "수락산")
+        20 -> Pair(OrgoIcon.Surak_Silver, "수락산")
+        21 -> Pair(OrgoIcon.Surak_Gold, "수락산")
+        22 -> Pair(OrgoIcon.Unak_Bronze, "안산")
+        23 -> Pair(OrgoIcon.Unak_Silver, "안산")
+        24 -> Pair(OrgoIcon.Unak_Gold, "안산")
+        25 -> Pair(OrgoIcon.Dobong_Bronze, "도봉산")
+        26 -> Pair(OrgoIcon.Dobong_Silver, "도봉산")
+        27 -> Pair(OrgoIcon.Dobong_Gold, "도봉산")
+        28 -> Pair(OrgoIcon.Buram_Bronze, "불암산")
+        29 -> Pair(OrgoIcon.Buram_Silver, "불암산")
+        30 -> Pair(OrgoIcon.Buram_Gold, "불암산")
+        31 -> Pair(OrgoIcon.FiveHundredMeters,"500m")
+        32 -> Pair(OrgoIcon.OneKm,"1km")
+        33 -> Pair(OrgoIcon.ThreeKm,"3km")
+        34 -> Pair(OrgoIcon.Sep,"9월")
+        35 -> Pair(OrgoIcon.Oct,"10월")
+        36 -> Pair(OrgoIcon.Nov,"11월")
+        37 -> Pair(OrgoIcon.Dec,"12월")
+        38 -> Pair(OrgoIcon.Jan,"1월")
+        39 -> Pair(OrgoIcon.Feb,"2월")
+        40 -> Pair(OrgoIcon.Mar,"3월")
+        41 -> Pair(OrgoIcon.Apr,"4월")
+        42 -> Pair(OrgoIcon.May,"5월")
+        43 -> Pair(OrgoIcon.Jun,"6월")
+        44 -> Pair(OrgoIcon.Jul,"7월")
+        45 -> Pair(OrgoIcon.Aug,"8월")
+        99 -> Pair(OrgoIcon.EarlyBird,"초기 회원")
+        else -> Pair(OrgoIcon.Dummy,"")
+    }
+}
