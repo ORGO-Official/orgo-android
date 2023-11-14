@@ -13,7 +13,7 @@ import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 import com.orgo.android.R
 import com.orgo.android.navigation.TopLevelDestination
-import com.orgo.core.designsystem.component.OrgoNavigationBarItem
+import com.orgo.core.ui.component.OrgoNavigationBarItem
 import com.orgo.core.designsystem.icon.IconType
 import com.orgo.core.ui.custom_modifier.customRectShadow
 
