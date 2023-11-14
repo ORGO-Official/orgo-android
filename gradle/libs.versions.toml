@@ -5,6 +5,7 @@ androidDesugarJdkLibs = "1.2.2"                                 # KotlinAndroid.
 androidxActivity = "1.6.1"
 androidxComposeBom = "2023.01.00"
 androidxComposeCompiler = "1.4.1"
+androidxComposeMaterial = "1.3.1"
 androidxComposeMaterial3 = "1.1.0-alpha06"
 androidxCore = "1.9.0"
 androidxCoreSplashscreen = "1.0.0"
@@ -12,6 +13,7 @@ androidxLifecycle = "2.6.0-alpha05"
 androidxNavigation = "2.5.3"
 androidxHiltNavigationCompose = "1.0.0"
 androidxAppCompat = "1.5.1"
+androidxDataStore = "1.0.0"
 
 # kotlin
 kotlin = "1.8.0"
@@ -26,6 +28,7 @@ androidxTestCore = "1.5.0"
 androidxTestExt = "1.1.4"
 androidxTestRules = "1.5.0"
 androidxTestRunner = "1.5.1"
+mockWebServer = "4.10.0"
 
 # others
 okhttp = "4.10.0"
@@ -33,6 +36,14 @@ retrofit = "2.9.0"
 retrofitKotlinxSerializationJson = "0.8.0"
 hilt = "2.44.2"
 hiltExt = "1.0.0"
+naverOauth = "5.7.0"
+kakaoSdk = "2.15.0"
+timber = "5.0.1"
+protobuf = "3.21.12"
+protobufPlugin = "0.8.19"
+gms-location = "17.1.0"
+coil = "2.2.2"
+tedPermission = "3.3.0"
 
 [libraries]
 # Dependencies of the included build-logic
@@ -62,6 +73,7 @@ androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
 androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
 androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout" }
 androidx-compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material", version.ref = "androidxComposeMaterial"}
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "androidxComposeMaterial3" }
 androidx-compose-material3-windowSizeClass = { group = "androidx.compose.material3", name = "material3-window-size-class", version.ref = "androidxComposeMaterial3" }
 androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
@@ -75,6 +87,7 @@ androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navig
 
 # network
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-convertor-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerializationJson" }
 okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
 
@@ -86,6 +99,26 @@ junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
 androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidxTestCore" }
 androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
 androidx-test-ext = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "androidxTestExt" }
+mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockWebServer"}
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+
+# third-party
+naver-oauth = { group = "com.navercorp.nid", name = "oauth", version.ref = "naverOauth"}
+kakao-user = { group = "com.kakao.sdk", name = "v2-user" , version.ref = "kakaoSdk"}
+kakao-share = {group = "com.kakao.sdk", name = "v2-share", version.ref = "kakaoSdk"}
+timber = { group= "com.jakewharton.timber", name = "timber", version.ref = "timber"}
+gms-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "gms-location"}
+coil = { group = "io.coil-kt" , name = "coil", version.ref = "coil"}
+coil-gif = { group = "io.coil-kt" , name = "coil-gif", version.ref = "coil"}
+coil-compose = { group = "io.coil-kt" , name = "coil-compose", version.ref = "coil"}
+tedPermission = { group = "io.github.ParkSangGwon", name = "tedpermission-normal", version.ref = "tedPermission"}
+
+# dataStore
+androidx-dataStore-core = { group = "androidx.datastore", name = "datastore", version.ref = "androidxDataStore" }
+androidx-dataStore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "androidxDataStore" }
+protobuf-kotlin-lite = { group = "com.google.protobuf", name = "protobuf-kotlin-lite", version.ref = "protobuf" }
+protobuf-protoc = { group = "com.google.protobuf", name = "protoc", version.ref = "protobuf" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
@@ -93,5 +126,7 @@ android-library = { id = "com.android.library", version.ref = "androidGradlePlug
 android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-parcelize = { id = "kotlin-parcelize", version.ref = "kotlin"}
+protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 
 [bundles]

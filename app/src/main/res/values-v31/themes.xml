@@ -2,8 +2,11 @@
 <resources>
 
     <style name="Theme.ORGO.Splash" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:windowSplashScreenBackground">@color/white</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
-        <item name="android:windowSplashScreenAnimationDuration">500</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowSplashScreenBackground">@color/orgo_green</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/orgo_green</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/logo_splash</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
     </style>
 </resources>

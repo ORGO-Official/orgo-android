@@ -11,6 +11,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven(url = "https://devrepo.kakao.com/nexus/content/groups/public/")
     }
 }
 rootProject.name = "ORGO"
@@ -24,3 +25,10 @@ include(":feature:map")
 include(":core:common")
 include(":core:network")
 include(":core:designsystem")
+include(":core:datastore")
+include(":feature:mypage")
+include(":feature:mountain_detail")
+include(":feature:profile_edit")
+include(":feature:settings")
+include(":feature:climb_complete")
+include(":feature:badge")

@@ -49,5 +49,10 @@ gradlePlugin {
             id = "orgo.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
+
+        register("androidFeature") {
+            id = "orgo.android.feature"
+            implementationClass = "AndroidFeatureConventionPlugin"
+        }
     }
 }
