@@ -1,5 +1,10 @@
 # 오르GO
-초보자도 쉽게 등산의 즐거움을 느끼고, 성취감을 얻을 수 있는 등산 기록 서비스
+초보자도 쉽게 등산의 즐거움을 느끼고, 성취감을 얻을 수 있는 등산 기록 서비스입니다. 
+
+<p align="center">
+<img src="/previews/main_preview.png"/>
+</p>
+
 ## Tech Stack & Libraries
 - Kotlin
 - Kotlin Corountines, Flow
@@ -44,15 +49,16 @@
 로그인 했을 경우 로그아웃, 회원탈퇴 기능을 제공합니다.
 
 ## Architecture
-- MVVM 아키텍처
+MVVM 아키텍처, 
+[안드로이드 권장 아키텍처] (https://developer.android.com/topic/architecture#recommended-app-arch)
+를 기반으로 하고 있습니다.
 <p align="center">
 <img src="/previews/architecture.png"/>
 </p>
 
-### Module
+### Multi Module
+각 feature마다 계층을 나누는 건 불필요하다고 판단해 core:domain, core:data에 각 feature에 필요한 domain,data 계층을 전부 구현하였습니다.
 ![image](https://github.com/ORGO-Official/orgo-android/assets/38021810/90cc83b3-6083-4a1f-a004-6ea1d6683312)
-Multi-module 구조로 설계하였습니다.
 
-각 feature마다 layer를 나누지 않았고 domain,data layer는 core:domain, core:data에 전부 구현하였습니다.
 
 
