@@ -23,8 +23,17 @@
 - [Timber](https://github.com/JakeWharton/timber)
 
 ## 주요 기능
+### 지도 및 검색
+지도 또는 검색을 통해 산을 선택하면 산 정보를 간단히 보여주는 BottomSheet가 올라옵니다.
+완등 인증 버튼은 정상 주변에서 활성화 됩니다.
+
+<p align="center">
+<img src="/previews/map_preview.png"/>
+</p>
+
 ### 완등 인증
-지도를 통해 산을 선택하고 정상 주변에서 완등 인증을 할 수 있습니다.
+정상 주변에서 완등 인증을 할 수 있으며 성공 시 완등 결과를 화면으로 이동합니다. 
+배경 이미지를 수정, 스크린샷을 저장할 수 있습니다. 
 
 ### 산 상세정보
 특정 산에 대한 정보와 주변 맛집에 대한 정보를 제공합니다.
@@ -50,7 +59,7 @@
 
 ## Architecture
 MVVM 아키텍처, 
-[안드로이드 권장 아키텍처] (https://developer.android.com/topic/architecture#recommended-app-arch)
+[안드로이드 권장 아키텍처](https://developer.android.com/topic/architecture#recommended-app-arch)
 를 기반으로 하고 있습니다.
 <p align="center">
 <img src="/previews/architecture.png"/>
